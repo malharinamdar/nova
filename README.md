@@ -6,7 +6,7 @@
 ---
 
 ## Snapshot
-A compact, no-fluff repo to experiment with: convert detector hits into graphs, train/validate a GNN that groups hits into charged-particle tracks, add a lightweight anomaly signal, and measure end-to-end inference latency on an edge device. Clean notebooks, reproducible sample data, and a short demo are the deliverables.
+A compact, no-fluff repo to experiment with: convert detector hits into graphs, train/validate a GNN that groups hits into charged-particle tracks, add a lightweight anomaly signal, and measure end-to-end inference latency on an edge device.
 
 ---
 
@@ -21,35 +21,6 @@ Use message-passing over hit-graphs to replace/augment combinatorial tracking; e
 - Anomaly: track-level autoencoder / simple scoring head  
 - Export: ONNX + runtime profiling (desktop + Raspberry Pi)  
 - Metrics: tracking efficiency, fake rate, ROC/AUC, inference latency (ms)
-
----
-
-## Progress tracker
-- [x] Project skeleton & README  
-- [ ] Sample dataset + ingestion (ROOT → npz/parquet)  
-- [ ] Graph builder (kNN / layer adjacency)  
-- [ ] Baseline greedy tracker & metrics  
-- [ ] GNN prototype (train/eval)  
-- [ ] Anomaly head & tests  
-- [ ] ONNX export + quantization experiments  
-- [ ] Raspberry Pi trigger demo + GPIO verification  
-- [ ] Docker image, notebook walkthrough, demo video
-
----
-
-## Minimal dev quickstart
-> Intended for the early-stage dev snapshot (small sample included).
-
-```bash
-# clone
-git clone https://github.com/<you>/nova.git
-cd nova
-
-# create env
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
 # run a tiny reproducible demo (uses packaged sample data)
 python src/ingest_demo.py         # converts ROOT→npz (sample)
 python src/build_graphs.py        # build a few graphs and save
