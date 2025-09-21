@@ -1,3 +1,3 @@
 # nova
 upcoming personal project.
-anamoly detection in collision data of the ATLAS experiment conducted at cern
+Graph-Neural-Network (GNN) Track Reconstruction & Anomaly Detection on CMS Open Data — with a low-latency trigger emulator
