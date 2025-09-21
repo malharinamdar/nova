@@ -21,8 +21,3 @@ Use message-passing over hit-graphs to replace/augment combinatorial tracking; e
 - Anomaly: track-level autoencoder / simple scoring head  
 - Export: ONNX + runtime profiling (desktop + Raspberry Pi)  
 - Metrics: tracking efficiency, fake rate, ROC/AUC, inference latency (ms)
-# run a tiny reproducible demo (uses packaged sample data)
-python src/ingest_demo.py         # converts ROOT→npz (sample)
-python src/build_graphs.py        # build a few graphs and save
-python src/train_toy.py --epochs 3
-python src/eval_toy.py
