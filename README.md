@@ -1,4 +1,6 @@
 # nova  
+![nova header](assets/NOVA.png)
+
 **Upcoming · personal project**
 
 **One line:** Graph-aware track reconstruction on CMS Open Data, plus a reproducible low-latency trigger prototype (ONNX → edge GPIO).
