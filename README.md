@@ -1,5 +1,4 @@
 # nova  
-![nova header](assets/NOVA.png)
 
 **Upcoming · personal project**
 
